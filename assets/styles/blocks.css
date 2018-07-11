@@ -1,0 +1,89 @@
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.top-10{
+    top: 10%
+}
+.top-20{
+    top: 20%
+}
+.top-30{
+    top: 30%
+}
+.top-40{
+    top: 40%
+}
+.top-50{
+    top: 50%
+}
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.al_it-c {
+    align-items: center;
+}
+
+.vert-al-c {
+    vertical-align: center;
+}
+
+.text_al-c {
+    text-align: center
+}
+.text_al-l {
+    text-align: left
+}
+
+.text_al-r {
+    text-align: right
+}
+
+.collapse {
+    border-collapse: collapse;
+}
+
+
+.bor-rad-10-l {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.bor-rad-10-r {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.bor-rad-10 {
+    border-radius: 10px;
+}
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}

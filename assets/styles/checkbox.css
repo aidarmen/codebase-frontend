@@ -1,0 +1,32 @@
+
+  .React__checkbox--input {
+    display: none;
+    border: 2px solid #cac8c9;
+  }
+  .React__checkbox--input + span {
+    
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: #fffffd;;
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 20%;
+    border: 2px solid #cac8c9;
+    box-sizing: border-box;
+    transition: all 150ms;
+  }
+  .React__checkbox--input:checked + span {
+   
+  }
+  .React__checkbox--input:checked + span::before {
+    content: '\2714';
+    font-size: 25px;
+    color: black;
+  }
+  .React__checkbox--input:disabled + span {
+    
+  }
+  

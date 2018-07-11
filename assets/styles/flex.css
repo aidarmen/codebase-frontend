@@ -1,0 +1,32 @@
+
+.flex {
+    display: flex;
+}
+
+.flex-around {
+    align-content: space-around;
+}
+
+.fl-dir-row {
+    flex-direction: row
+}
+
+.fl-dir-col {
+    flex-direction: column
+}
+
+.fl-fs {
+    justify-content: flex-start;
+}
+
+.fl-c {
+    justify-content: center;
+}
+
+.fl-fe {
+    justify-content: flex-end;
+}
+
+.fl-d-r {
+    flex-direction: row;
+}

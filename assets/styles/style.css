@@ -1,0 +1,90 @@
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    border: 0px solid black;
+}
+
+
+/*//////////////////checkbox////////////*/
+
+        /* input[type="checkbox"] {
+            display: none;
+        }
+
+
+        label::before {
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            border: 2px solid #cac8c9;
+            margin-left: 20%;
+            background-color: #fffffd;
+        }
+
+        input[type="checkbox"]:checked+label::before {
+            background-color: #fffffd;
+            content: "\2714";
+            font-size: 30px;
+            text-align: center;
+        } */
+/* ///////////////// */
+th {
+    bottom: -14px;
+    position: relative;
+}
+
+.row-2 td {
+    padding-top: 30px
+}
+
+
+.small-v-l {
+    width: 45%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #555552;
+}
+.text-shadow {
+    text-shadow: 3px 3px 30px black
+}
+
+
+/* /////button///*/
+.cancel {
+    right: 18%;
+    top: 35%;
+    color: white;
+    transform: rotate(45deg);
+    font-size: 50px;
+    font-weight: 10;
+    font-family: 'Open-sans'
+}
+
+
+
+.h-1px{
+    height: 1px;
+}
+
+.bg_col-white{
+    background-color: white;
+}
+
+
+.border-radius-10{
+    border-radius: 10px
+}
+.border-radius-20{
+    border-radius: 20px
+}
+
+.border-radius-30{
+    border-radius: 30px
+}
+
