@@ -21,7 +21,7 @@ class ListofStudents extends Component{
     return(
         <div>
        <Table  list={this.props.list}  display={this.props.display}/>
-       <AddStudents list ={this.props.list}/> 
+        {/* <AddStudents list ={this.props.list}/>   */}
        </div>
     )
     }

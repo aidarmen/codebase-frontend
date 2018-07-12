@@ -13,6 +13,8 @@ class Table extends Component{
 	}
     render() {
     return(
+
+
         <table style={this.props.display=='0' ? {display:'none'} : {display: '' } } className="collapse w-full fadeInUp ">
         <UpperTab/>
 <tr style={{height:'10px'}}> </tr>
@@ -21,13 +23,14 @@ class Table extends Component{
   {/* // <StudentAtendance name={"Dmitry"} paid={0} />
   // <StudentAtendance name={"Sergey"} paid={1} />
   // <StudentAtendance name={"Nikolai"} paid={0} /> */}
-          
-         
-
-
+    
       </table>
        
+
+       
         )
+
+
         }
 
 

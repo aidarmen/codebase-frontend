@@ -88,3 +88,183 @@ th {
     border-radius: 30px
 }
 
+
+.bg_col-9abbc2{
+    background-color: #9abbc2
+}
+
+.bg_col-658a92{
+    background-color: #658a92
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-col-a-80-a {
+    grid-template-columns: auto 80% auto;
+
+  }
+  .grid-row-70-a {
+    
+    grid-template-rows: 70% auto;
+  }
+.grid-col-a-15-a{
+    grid-template-columns: 45% 10% 45%;
+}
+.grid-col-a-5-a-5-a{
+    grid-template-columns: auto 5% auto 5% auto;
+}
+
+
+.grid-row-a {
+    
+    grid-template-rows: auto;
+  }
+
+  .grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grid-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .grid-item3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+  }
+
+.grid-item4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid-hr{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+  .mr-10{
+      margin-right: 10%;
+  }
+
+  .grid-img1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grid-ad1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+  }
+  .grid-ad2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .grid-ad3{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .w-25{
+      width: 25%;
+  }
+  .h-25{
+    height: 25%;
+}
+  .h-40px{
+      height: 40px;
+  }
+
+  .h-50px{
+    height: 50px;
+}
+.h-60px{
+    height: 60px;
+}
+.h-70px{
+    height: 70px;
+}
+.h-80px{
+    height: 80px;
+}
+.h-100px{
+    height: 100px;
+}
+
+.border-radius-full{
+    border-radius: 100%;
+}
+
+.w-300px{
+    width: 300px;
+}
+
+.col-white{
+    color:white;
+}
+
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-30{
+    padding: 30px;
+}
+.vertical-align-middle{
+    vertical-align: middle;
+}
+
+.font-size-11 {
+    font-size: 11px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+.font-size-19 {
+    font-size: 19px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+.font-size-30 {
+    font-size: 30px;
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.m-auto{
+    margin: auto;
+}

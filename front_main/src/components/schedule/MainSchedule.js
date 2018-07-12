@@ -14,7 +14,7 @@ class MainSchedule extends Component{
     render() {
     return(
          <div className="">
-          <header className="bg_col-00844e col-eefffd h-75px w-auto jc-sb  flex box-shadow">
+          <header className="bg_col-658a92  col-eefffd h-75px w-auto jc-sb  flex box-shadow">
             <div className="flex al_it-c ml-10 font-weight-700 text-shadow">
             CodeBase
              </div>
