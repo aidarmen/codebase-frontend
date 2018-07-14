@@ -268,3 +268,7 @@ th {
 .m-auto{
     margin: auto;
 }
+
+.pointer{
+    cursor:pointer;
+}

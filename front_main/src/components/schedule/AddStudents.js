@@ -14,7 +14,7 @@ class addStudents extends Component{
     render() {
     return(
          
-        <table className="collapse w-full  ">
+        <table className="collapse w-full  "  style={this.props.display=='0' ? {display:'none'} : {display: '' } }>
        <SearchTab/>
        <tr style={{height:'10px'}}> </tr>
  {this.props.list.map(function (name){

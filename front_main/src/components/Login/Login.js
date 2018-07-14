@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import axios from 'axios';
+
 class Login extends Component{
 
     constructor(props){
@@ -7,7 +9,8 @@ class Login extends Component{
         
         this.state = {
             email: "",
-            password: ""
+            password: "",
+            errors: {}
           };
           this.handleChange = this.handleChange.bind(this);
           this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,9 +20,16 @@ class Login extends Component{
 		// this.props.authActions.me()
     }
     
+
+
+
     validateForm() {
+
+     
         return this.state.email.length > 0 && this.state.password.length > 0;
       }
+
+    
     
       handleChange = event => {
         this.setState({
@@ -30,8 +40,20 @@ class Login extends Component{
     
       handleSubmit = event => {
         event.preventDefault();
+        
+        const user = {
+            email:this.state.email,
+            password: this.state.password,
+            errors: this.state.errors
+        }
 
-console.log(this.props.value)
+        console.log(user);
+
+        axios
+        .post('api/users/register', user)
+        .then(res => console.log(res.data))
+        .catch(err => this.setState({errors: err.response.data}));
+
       
       }
     
@@ -51,17 +73,17 @@ console.log(this.props.value)
 
                     <form onSubmit={this.handleSubmit} className="">
                         <input  type="email"  value={this.state.email} onChange={(e) => this.setState({...this.state, email: e.target.value})} placeholder="email" />
-                        <input   value={this.state.password}  onChange={(e) => this.setState({...this.state, password: e.target.value})}  type="password" placeholder="password" />
+                        <input   value={this.state.password} required onChange={(e) => this.setState({...this.state, password: e.target.value})}  type="password" placeholder="password" />
                         <button disabled={!this.validateForm()} type="submit" className="loginbutton" >sign in</button>
 
                     </form>
                     <div className="flex fl-dir-row jc-c    ">
                         <div className="m-auto bg_col-white w-30 h-1px" ></div>
-                        <div className="font-size-11 col-white" >don't have an account?</div>
+                        <div className="font-size-11 col-white pointer" >don't have an account?</div>
                         <div className="m-auto bg_col-white w-30 h-1px"     ></div>
                     </div>
 
-                    <button   className="registerbutton">register</button>
+                    <button   className="registerbutton pointer">register</button>
 
                     <div className="license">by rergistering you are acepting the terms of license agreement</div>
 
@@ -83,7 +105,7 @@ console.log(this.props.value)
         <div className="grid-item2  grid-col-a-5-a-5-a grid-row-a grid mt-2 ">
             <div className="grid-ad1 flex fl-dir-row w-full  h-100px jc-c">
                 <div className="flex fl-dir-col jc-c">
-                    <img className="h-80px w-80px  border-radius-full" src="./images/AD1.png" alt="" />
+                    <img className="h-80px w-80px  border-radius-full" src="./images/avatar.png" alt="" />
                 </div>
                 <div className="flex fl-dir-col p-10 jc-c col-white">
                     <div className="font-size-19 p-10 font-weight-700">Register</div>
@@ -94,7 +116,7 @@ console.log(this.props.value)
             </div>
             <div className="grid-ad2 flex fl-dir-row w-full  h-100px jc-c">
                 <div className="flex fl-dir-col jc-c">
-                    <img className="h-80px w-80px  border-radius-full" src="./images/AD1.png" alt="" />
+                    <img className="h-80px w-80px  border-radius-full" src="./images/avatar.png" alt="" />
                 </div>
                 <div className="flex fl-dir-col p-10 jc-c col-white">
                     <div className="font-size-19 p-10 font-weight-700">Study</div>
@@ -105,7 +127,7 @@ console.log(this.props.value)
             </div>
             <div className="grid-ad3 flex fl-dir-row w-full  h-100px jc-c">
                 <div className="flex fl-dir-col jc-c">
-                    <img className="h-80px w-80px  border-radius-full" src="./images/AD1.png" alt="" />
+                    <img className="h-80px w-80px  border-radius-full" src="./images/avatar.png" alt="" />
                 </div>
                 <div className="flex fl-dir-col p-10 jc-c col-white">
                     <div className="font-size-19 p-10 font-weight-700">Recieve Results</div>

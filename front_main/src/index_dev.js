@@ -9,9 +9,12 @@ import createHistory from 'history/createBrowserHistory'
 const history = createHistory()
 
 import configureStore from './store/configureStore'
-const store = configureStore(true)
-import MainL   from './components/Login/MainL'
+
+import MainL   from './components/login/MainL'
 import MainSchedule   from './components/schedule/MainSchedule'
+import store from './store.js';
+
+
 
 import axios from 'axios'
 // axios.defaults.baseURL =  'http://192.168.1.105:8000/'
